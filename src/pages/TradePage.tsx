@@ -360,43 +360,32 @@ const RenderNormal = ({ onChangeOrderRef, onPrice, onSize }) => {
 
 const RenderSmall = ({ onChangeOrderRef, onPrice, onSize }) => {
   return (
-    <>
-      <Row
-        style={{
-          minHeight: '900px',
-          flexWrap: 'nowrap',
-        }}
-      >
-        <Col flex="auto" style={{ height: '100%', display: 'flex' }}>
-          <Orderbook
-            smallScreen={true}
-            depth={13}
-            onPrice={onPrice}
-            onSize={onSize}
-          />
+    <Row
+      style={{
+        minHeight: '900px',
+        justifyContent:'center' 
+      }}
+    >
+      <Row>
+        <Col style={{ width: '29vw', height: 'auto' }}>
+          <Orderbook smallScreen={false} onPrice={onPrice} onSize={onSize} />
         </Col>
-        <Col flex="auto" style={{ height: '100%', display: 'flex' }}>
-          <TradesTable smallScreen={true} />
+        <Col style={{ width: '29vw', marginTop: '-5px' , height: 'auto' }}>
+          <TradesTable smallScreen={false} />
         </Col>
         <Col
-          flex="400px"
-          style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+          style={{ width: '37vw', height: 'auto', display: 'flex', flexDirection: 'column' }}
         >
           <TradeForm setChangeOrderRef={onChangeOrderRef} />
           <StandaloneBalancesDisplay />
         </Col>
       </Row>
-      <Row 
-        style={{
-          minHeight: '900px',
-          flexWrap: 'nowrap',
-        }}
-      >
-        <Col flex="auto">
+      <Row>
+        <Col style={{ width: "97vw"}} >
           <UserInfoTable />
         </Col>
       </Row>
-    </>
+    </Row>
   );
 };
 

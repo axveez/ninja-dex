@@ -164,8 +164,14 @@ export default function TopBar() {
           <Menu.Item key={tradePageUrl} style={{ margin: '0 10px 0 20px' }}>
             TRADE
           </Menu.Item>
-          <Menu.Item key='/charts/88HrMUm3RtXGF2F4Ftnb7P9Fdh2yz9qfmAgp7jh2CFs9' style={{ margin: '0 10px' }}>
-            CHART
+          <Menu.Item key="#" style={{ margin: '0 10px' }}>
+            <a
+              href='https://www.solanatools.io/#/market/88HrMUm3RtXGF2F4Ftnb7P9Fdh2yz9qfmAgp7jh2CFs9'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CHART
+            </a>
           </Menu.Item>
           {connected && (!searchFocussed || location.pathname === '/balances') && (
             <Menu.Item key="/balances" style={{ margin: '0 10px' }}>
