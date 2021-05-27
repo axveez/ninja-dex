@@ -47,6 +47,15 @@ It is possible to add OHLCV candles built from on chain data using [Bonfida's AP
 </p>
 
 ---
+### NOTE BY AXVEEZ
+CHANGE PAIR MARKET
+1. See how to `Running the UI` and install the DEX package 
+2. After Package Installed
+3. open folder `node_modules/@project-serum/serum/lib/`
+4. Change `node_modules/@project-serum/serum/lib/markets.json` with new `markets.json`
+5. Change `node_modules/@project-serum/serum/lib/token-mints.json` with new `token-mints.json`
+6. Restart server :) ALL DONE
+---
 
 See the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) for other commands and options.
 
