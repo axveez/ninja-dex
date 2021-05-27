@@ -44,7 +44,7 @@ const Price = styled.div`
   color: white;
 `;
 
-export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
+export default function Orderbook({ smallScreen, depth = 10, onPrice, onSize }) {
   const markPrice = useMarkPrice();
   const [orderbook] = useOrderbook();
   const { baseCurrency, quoteCurrency } = useMarket();
@@ -108,7 +108,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
   return (
     <FloatingElement
       style={
-        smallScreen ? { flex: 1 } : { height: 'calc(100vh - 182px)', overflow: 'hidden' }
+        smallScreen ? { flex: 1 } : { height: '780px', overflow: 'hidden' }
       }
     >
       <Title>Orderbook</Title>

@@ -343,7 +343,7 @@ const RenderNormal = ({ onChangeOrderRef, onPrice, onSize }) => {
           <TradesTable smallScreen={false} />
         </Col>
         <Col
-          style={{ width: '37vw', height: 'auto', display: 'flex', flexDirection: 'column' }}
+          style={{ width: '37vw', height: 'auto', flexDirection: 'column' }}
         >
           <TradeForm setChangeOrderRef={onChangeOrderRef} />
           <StandaloneBalancesDisplay />
@@ -362,7 +362,7 @@ const RenderSmall = ({ onChangeOrderRef, onPrice, onSize }) => {
   return (
     <Row
       style={{
-        minHeight: '900px',
+        maxHeight: '900px',
         justifyContent:'center' 
       }}
     >
@@ -374,7 +374,7 @@ const RenderSmall = ({ onChangeOrderRef, onPrice, onSize }) => {
           <TradesTable smallScreen={false} />
         </Col>
         <Col
-          style={{ width: '37vw', height: 'auto', display: 'flex', flexDirection: 'column' }}
+          style={{ width: '37vw', height: 'auto', flexDirection: 'column' }}
         >
           <TradeForm setChangeOrderRef={onChangeOrderRef} />
           <StandaloneBalancesDisplay />
