@@ -362,7 +362,6 @@ const RenderSmall = ({ onChangeOrderRef, onPrice, onSize }) => {
   return (
     <Row
       style={{
-        maxHeight: '900px',
         justifyContent:'center' 
       }}
     >
